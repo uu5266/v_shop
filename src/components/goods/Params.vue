@@ -231,8 +231,7 @@ export default {
         expandTrigger: 'hover',
         value: 'cat_id',
         label: 'cat_name',
-        children: 'children',
-        checkStrictly: true
+        children: 'children'
       },
       // 选择框双向绑定的修改信息
       selectedKeys: [],
