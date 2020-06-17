@@ -169,6 +169,7 @@ export default {
       // 商品列表数据
       catelist: [],
       // 指定级联选择器的配置对象
+      // expandTrigger: 'hover',
       cascaderProps: {
         expandTrigger: 'hover',
         value: 'cat_id',

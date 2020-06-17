@@ -3,8 +3,8 @@
     <!-- 头部区域 -->
     <el-header>
       <div>
-        <img src="../assets/heima.png" alt="logo">
-        <span>电商后台管理系统</span>
+        <img src="../assets/shoponline2.png" alt="shoponline" class="img1" @click="clickImg">
+        <span>商城后台管理系统</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button>
     </el-header>
@@ -88,6 +88,11 @@
       saveNavState(activePath) {
         window.sessionStorage.setItem('activePath', activePath)
         this.activePath = activePath
+      },
+      // 点击图片执行
+      clickImg() {
+        // redirect to home
+        this.$router.push('/home')
       }
     }
   }
@@ -142,5 +147,8 @@
     text-align: center;
     letter-spacing: 0.2em;
     cursor: pointer;
+  }
+  .img1 {
+    width: 40px;
   }
 </style>

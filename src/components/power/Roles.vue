@@ -355,7 +355,7 @@ export default {
     async removeRightById(role, rightId) {
       // 弹框提示用户是否删除
       const confirmResult = await this.$confirm(
-        '此操作将永久删除该文件, 是否继续?',
+        '此操作将删除该权限, 是否继续?',
         '提示',
         {
           confirmButtonText: '确定',
@@ -374,6 +374,7 @@ export default {
         return this.$message.error('删除权限失败！')
       }
       // this.getRolesList()
+      this.$message.success('已删除该权限!')
       role.children = res.data
     },
     // 显示分配权限对话框
